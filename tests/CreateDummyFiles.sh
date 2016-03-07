@@ -2,7 +2,7 @@
 
 counter=0
 
-while sleep 0.5
+while sleep 0.1
 do
     truncate -s 1MB database/foo$counter
     echo "Created dummy data"
