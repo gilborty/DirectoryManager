@@ -2,6 +2,8 @@
 
 counter=0
 
+mkdir database
+
 while sleep 0.1
 do
     truncate -s 1MB database/foo$counter
@@ -9,6 +11,3 @@ do
     counter=$[$counter +1]
 
 done
-
-
-
